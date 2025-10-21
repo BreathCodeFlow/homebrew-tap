@@ -1,18 +1,16 @@
 class Tide < Formula
   desc "🌊 An opinionated macOS maintenance orchestrator with an iocraft-powered interface"
   homepage "https://github.com/BreathCodeFlow/tide"
-  version "1.2.3"
+  version "1.2.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/BreathCodeFlow/tide/releases/download/v#{version}/tide-aarch64-apple-darwin.tar.gz"
-      sha256 "cc448eb2be7526977438dc6ddfe15ed467af5fc08e643307178d467ae47e077b"    else
-      url "https://github.com/BreathCodeFlow/tide/releases/download/v#{version}/tide-x86_64-apple-darwin.tar.gz"
+      sha256 "4052fd3d82ec72e1c55b0d74f2256033c0a9043cea251749a011f98baf534f75"      url "https://github.com/BreathCodeFlow/tide/releases/download/v#{version}/tide-x86_64-apple-darwin.tar.gz"
       sha256 "REPLACE_WITH_ACTUAL_SHA256_FOR_X86_64"
       sha256 "362a9da8e02a31208d455e2c5e9e6259e01dfa5f86e0a9964bab6670996ddd7f"  end
-
-  def install
+      sha256 "5f35706261b18547b6837252a47ab7353f8f638991ed08f091a1952827f69a3c"  def install
     bin.install "tide"
   end
 
